@@ -53,17 +53,17 @@ class App extends React.Component{
   homePage(){
     return(
       <div className="App">
-      <div className="App-header">
-        <button className="storeButton">Store</button>
-        <button className="tutorialButton">Tutorial</button>
-        <img src={logo} className="App-logo" alt="logo" />  
-        <button className="blogButton">Blog</button>
-        <button className="contactButton" onClick={this.enableContactPage}>Contact</button>
-        <img src={hero} className="App-hero" alt="hero"/>
-        <img src={shadow} className="App-shadow" alt="shadow"/>
-        <div className="droneName">F-210</div>
-        <div className="quoteText">"THE FASTEST DRONE ON THE PLANET"</div>
-        <div className="quoteText">"The Wirecutter</div>
+        <div className="App-header">
+          <button className="storeButton">Store</button>
+          <button className="tutorialButton">Tutorial</button>
+          <img src={logo} className="App-logo" alt="logo" />  
+          <button className="blogButton">Blog</button>
+          <button className="contactButton" onClick={this.enableContactPage}>Contact</button>
+          <img src={hero} className="App-hero" alt="hero"/>
+          <img src={shadow} className="App-shadow" alt="shadow"/>
+          <div className="droneName">F-210</div>
+          <div className="quoteText">"THE FASTEST DRONE ON THE PLANET"</div>
+          <div className="quoteText">"The Wirecutter</div>
       </div>
     </div>
    );

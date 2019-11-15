@@ -25,6 +25,7 @@ button{
   position:  absolute;
   top: 20px;
   font-size: 60%;
+  opacity: 75%;
 }
 
 .droneName{
@@ -45,19 +46,19 @@ button{
 }
 
 .storeButton{
-  left: 10vmin; 
+  left: 15vmin; 
 }
 
 .tutorialButton{
-  left: 20vmin;
+  left: 30vmin;
 }
 
 .blogButton{
-  right: 20vmin;
+  right: 30vmin;
 }
 
 .contactButton{
-  right: 10vmin;
+  right: 15vmin;
 }
 
 .App-logo {
