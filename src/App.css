@@ -16,6 +16,65 @@ body, html {
   src: url("Fonts/Archivo-Bold.ttf");
 }
 
+textarea{
+  outline: 0;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-color: rgb(171, 171, 171);
+  background: transparent;
+  width: 95vmin;
+  resize: none;
+  height: 20vmin;
+}
+
+.Contact-logo{
+  height: 15px;
+  margin-top: 10px;
+  padding-bottom: 50px;
+}
+
+form, h2{
+  font-size: 8.5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Archivo-Regular";
+}
+
+form, input{
+  font-family: "Archivo-Regular";
+  opacity: 75%;
+  font-size: 12px;
+}
+
+form, textarea{
+  font-family: "Archivo-Regular";
+  opacity: 75%;
+  font-size: 12px;
+}
+
+input[type="text"]{
+  border: none;
+  border-bottom: 2px solid rgb(171, 171, 171);
+  background-color: transparent;
+  width: 95vmin;
+  left: 30vmin;
+  padding-bottom: 15px;
+}
+
+input[type="text"]:focus{
+  border-bottom: 2px solid rgb(126, 126, 126);
+}
+
+input[type="submit"]{
+  margin-top: 20px;
+  background-color: rgb(233, 62, 0);
+  font-family: "Archivo-Bold";
+  border: none;
+  color: white;
+  padding: 14px 28px
+}
+
 button{
   font-family: "Archivo-Regular";
   background-color: Transparent;

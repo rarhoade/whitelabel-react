@@ -42,9 +42,17 @@ class App extends React.Component{
     return(
       <form>
         <div className="App-header">
-          <h2>First Name</h2>
-          <input type="first-name" placeholder = "Enter First Name"/>
-          <button onClick={this.enableHomePage}>Home</button>
+          <img src={logo} className="Contact-logo" alt="logo"/>
+          <form>
+            <h2 className="Input-form">FULL NAME</h2>
+            <input type="text" placeholder = "Enter your full name"/>
+            <h2 className="Input-form">EMAIL</h2>
+            <input type="text" placeholder = "Enter your email"/>
+            <h2 className="Input-form">MESSAGE</h2>
+            <textarea placeholder = "What are your plans?"/>
+            <br/>
+            <input type="submit" value="Submit Message ->"/>
+          </form>
         </div>
       </form>
     );
