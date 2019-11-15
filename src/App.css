@@ -1,5 +1,5 @@
 body, html {
-  background-color: rgb(250, 250, 238);
+  background-color: rgb(238, 238, 225);
 }
 
 .App {
@@ -11,16 +11,53 @@ body, html {
   src: url("Fonts/Archivo-Regular.ttf");
 }
 
+@font-face{
+  font-family: "Archivo-Bold";
+  src: url("Fonts/Archivo-Bold.ttf");
+}
+
 button{
   font-family: "Archivo-Regular";
   background-color: Transparent;
   outline: none;
   background-repeat: no-repeat;
   border: none;
+  position:  absolute;
+  top: 20px;
+  font-size: 60%;
+}
+
+.droneName{
+  color: white;
+  font-size: 500%; 
+  font-family: "Archivo-Bold";
+}
+
+.quoteText{
+  color: grey;
+  opacity: 20%;
+  font-family: "Archivo-Bold";
+  font-size: 50%;
+}
+
+.topColumn{
+  display: inline-block;
 }
 
 .storeButton{
-  
+  left: 10vmin; 
+}
+
+.tutorialButton{
+  left: 20vmin;
+}
+
+.blogButton{
+  right: 20vmin;
+}
+
+.contactButton{
+  right: 10vmin;
 }
 
 .App-logo {
