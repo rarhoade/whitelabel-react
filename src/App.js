@@ -47,7 +47,7 @@ class App extends React.Component{
   }
   //=======================================================
 
-
+  //updates state to reflect contact form values
   handleContactFormChange(event){
     switch(event.target.getAttribute("formattr")){
       case "name":
@@ -62,9 +62,10 @@ class App extends React.Component{
       default:
         break;
     }
-
   }
 
+  //placeholder for submit of contact form
+  //would probably implement an ajax call if we had a backend?
   handleContactFormSubmit(event){
     var submission = {
       name: this.state.name,
