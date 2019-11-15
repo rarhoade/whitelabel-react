@@ -8,18 +8,21 @@ class App extends React.Component{
 
   constructor(props){
     super(props);
-
+    //keeps track of page transition states
     this.state = {
       homePage: true,
       tutorialPage: false,
       blogPage: false,
       contactPage: false
     };
-
+    
+    //binds functions to access this
     this.enableContactPage = this.enableContactPage.bind(this);
     this.enableHomePage = this.enableHomePage.bind(this)
   }
 
+  //functions for switching page states
+  //======================================================
   enableContactPage() {
     this.setState({
       homePage: false,
@@ -35,9 +38,13 @@ class App extends React.Component{
       tutorialPage: false,
       blogPage: false,
       contactPage: false
-    })
+    });
   }
+  //=======================================================
 
+
+  //functions that return html markup
+  //=======================================================
   contactPage(){
     return(
       <form>
@@ -68,7 +75,9 @@ class App extends React.Component{
     </div>
    );
   }
+  //=======================================================
   
+  //render controls page display based on this.state values
   render(){ 
       return (
         <div>
