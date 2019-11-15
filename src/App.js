@@ -8,7 +8,7 @@ class App extends React.Component{
 
   constructor(props){
     super(props);
-
+    //keeps track of page transition states
     this.state = {
       homePage: true,
       tutorialPage: false,
@@ -18,13 +18,16 @@ class App extends React.Component{
       email: null,
       message: null
     };
-
+    
+    //binds functions to access this
     this.enableContactPage = this.enableContactPage.bind(this);
     this.enableHomePage = this.enableHomePage.bind(this);
     this.handleContactFormChange = this.handleContactFormChange.bind(this);
     this.handleContactFormSubmit = this.handleContactFormSubmit.bind(this);
   }
 
+  //functions for switching page states
+  //======================================================
   enableContactPage() {
     this.setState({
       homePage: false,
@@ -40,8 +43,10 @@ class App extends React.Component{
       tutorialPage: false,
       blogPage: false,
       contactPage: false
-    })
+    });
   }
+  //=======================================================
+
 
   handleContactFormChange(event){
     switch(event.target.getAttribute("formattr")){
@@ -71,6 +76,8 @@ class App extends React.Component{
       + " with message: " + submission.message);
   }
 
+  //functions that return html markup
+  //=======================================================
   contactPage(){
     return(
       <div className="App-header">
@@ -107,7 +114,9 @@ class App extends React.Component{
     </div>
    );
   }
+  //=======================================================
   
+  //render controls page display based on this.state values
   render(){ 
       return (
         <div>
