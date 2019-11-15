@@ -1,7 +1,7 @@
 import React from 'react';
-import logo from './Logo.png';
-import hero from './Drone.png';
-import shadow from './Shadow.png'
+import logo from './Images/Logo.png';
+import hero from './Images/Drone.png';
+import shadow from './Images/Shadow.png'
 import './App.css';
 
 class App extends React.Component{
